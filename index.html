@@ -23,40 +23,61 @@
             </div>
             <div class="actions">
                 <a class="btn comienza d-none d-md-inline-block"><i class="bi-cart-check-fill" href="#"></i> Comienza ahora</a>
-                <a class="btn preguntar d-none d-md-inline-block"><i class="bi-chat-right-dots" href="#"></i> Pregúntale a un egresado</a>
-                <a class="btn preguntar mobi d-inline-block d-md-none"><i class="bi-chat-right-dots" href="#"></i> Pregúntale a un egresado</a>
+                <a class="btn preguntar d-none d-md-inline-block" data-bs-toggle="modal" data-bs-target="#CalendarioModal"><i class="bi-chat-right-dots" href="#"></i> Pregúntale a un egresado</a>
+                <a class="btn preguntar mobi d-inline-block d-md-none" data-bs-toggle="modal" data-bs-target="#CalendarioModal"><i class="bi-chat-right-dots" href="#"></i> Pregúntale a un egresado</a>
             </div>
         </div>
     </header>
 
 <!-- SHOWCASE -->
     <section id="showcase" class="pt-5">
-        <div class="container py-5">
+        <div class="container pt-5 pb-3">
             <div class="row d-flex align-items-center pt-4">
                 <div class="col-12 col-md-6 text-center">
                     <h1 class="hackeranda">Aprende a programar</h1>
-                    <h2>Podrías ganar</h2>
-                    <div class="sueldo">$<span id="rangeValue">16,000</span> MXN</div>
-                    <p>Sueldo promedio de un <b>desarrollador Full Stack</b> en México</p>
+                    <h2 class="pb-4">Podrías ganar</h2>
+                    <div class="sueldo pb-3">$<span id="rangeValue">33,650</span><span class="moneda"> MXN</span></div>
+                    <p class="promedio">Sueldo promedio de un <b class="puesto">Desarrollador&nbsp;Full&nbsp;Stack&nbsp;<i><span id="nivel">Senior</span></i></b> en&nbsp;México</p>
                     
-                    <div>
+                    <div class="bloque-slider">
                         
                         <div class="main">
-                            <input type="range" class="range" min="0" max="32000" value="16000" step="500" id="slider" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">                    
+                            <input list="markers" type="range" class="range" min="1" max="4" value="3" step="1" id="slider" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+                            <datalist id="markers">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4"></option>
+                            </datalist>        
                         </div>
 
                         <script  type="text/javascript">
+                            
                             function rangeSlide(value) {
-                                document.getElementById('rangeValue').innerHTML = parseFloat(value)
-      .toLocaleString('en-US', { maximumFractionDigits: 2 });
-                            }
+                                var valor = document.getElementById('slider').value;
+                                if (valor == 1) {
+                                    document.getElementById('rangeValue').innerHTML = '11,650';
+                                    document.getElementById('nivel').innerHTML = 'Junior';
+                                } else if (valor == 2){
+                                    document.getElementById('rangeValue').innerHTML = '18,170';
+                                    document.getElementById('nivel').innerHTML = 'Intermedio';
+                                } else if (valor == 3){
+                                    document.getElementById('rangeValue').innerHTML = '33,650';
+                                    document.getElementById('nivel').innerHTML = 'Senior';
+                                } else if (valor == 4){
+                                    document.getElementById('rangeValue').innerHTML = '42,800';
+                                    document.getElementById('nivel').innerHTML = 'Senior&nbsp;Avanzado';
+                                }
+                           }
+
+                            
 
                         </script>
 
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <img src="imgs/experiencia-devf-mobi.jpg" class="img-fluid">
+                    <img src="imgs/aprende.png" class="img-fluid d-none d-md-block">
                 </div>
             </div>
         </div>
@@ -69,13 +90,13 @@
 <!-- APRENDE -->
 
     <section id="aprende">
-        <div class="container py-5">
+        <div class="container pt-3 pb-5">
             <div class="row">
                 <div class="col-12">
                     <h2 class="pb-3">Aprender es más accesible cuando es práctico, en vivo y guiado</h2>
                     <img src="imgs/experiencia-devf-desktop.jpg" class="img-fluid d-none d-md-block">
                     <img src="imgs/experiencia-devf-mobi.jpg" class="img-fluid d-block d-md-none">
-                    <div class="row pt-4">
+                    <div class="row">
                         <div class="col-12 col-lg-4 high mt-4">
                             <h5>Acompañamiento personalizado de un Sensei experto</h5>
                             <p>Tu Sensei estará a tu lado para resolver dudas o reforzar temas específicos.</p>
@@ -289,7 +310,7 @@
                             <div class="col-12 col-md-7 align-middle p-4">
                                 <h3>¿Te queda alguna duda?</h3>
                                 <p>Recibe respuestas de un Egresado con <br/>experiencia cerca de ti</p>
-                                <a class="btn preguntar" href="#"><i class="bi-chat-right-dots"></i> Pregúntale a un egresado</a>
+                                <a class="btn preguntar" data-bs-toggle="modal" data-bs-target="#CalendarioModal"><i class="bi-chat-right-dots"></i> Pregúntale a un egresado</a>
                             </div>
                         </div>
                     </div>
@@ -317,7 +338,26 @@
     </div>
 </section>
   
-    
+
+<!-- MODAL -->
+
+
+<div class="modal fade" id="CalendarioModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Agenda tu llamada</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+<!-- IFRAME DE GOOGLE CALENDAR -->  
+          Aquí iría el calendario de Google
+        </div>
+
+      </div>
+    </div>
+</div>
     
 
 

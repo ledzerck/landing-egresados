@@ -57,6 +57,16 @@ h1, h2, h3 ,h4 ,h5 ,h6, .sueldo {
     font-size: 60px;
     font-weight: 600;
 }
+
+
+/*PODRÏAS GANAR*/
+
+.promedio {
+    font-size: 16px;
+    color: #000;
+    line-height: 28px;
+}
+
 .form-range {
     -webkit-appearance: none;
     width: 100%;
@@ -66,7 +76,58 @@ h1, h2, h3 ,h4 ,h5 ,h6, .sueldo {
     border-radius: 20px;
 }
 
-/* APRENDE */
+.sueldo {
+    line-height: 50px;
+}
+
+.moneda {
+    font-size: 30px;
+}
+
+.puesto {
+    color: #000;
+}
+
+
+/* SALARIO */
+
+#slider {
+    /*-webkit-appearance: none;*/
+    width: 100%;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #ddd;
+    z-index: 10;
+  }
+  
+
+  #slider::-webkit-slider-thumb {
+    cursor: pointer;
+    color: #8c72ff;
+  }
+  
+  .bloque-slider datalist {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .bloque-slider option {
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 15px;
+    color: #8c72ff;
+    z-index: 1;
+  }
+  
+  .bloque-slider input[type="range"] {
+    width: 100%;
+    margin: 0;
+  }
+
 
 
 
@@ -150,26 +211,3 @@ h1, h2, h3 ,h4 ,h5 ,h6, .sueldo {
 }
 
 
-/* SALARIO */
-
-.main {
-    width: 100%;
-    margin: 14% auto;
-    position: relative;
-  }
-
-#slider {
-    /*-webkit-appearance: none;*/
-    width: 100%;
-    height: 5px;
-    border-radius: 3px;
-    background-color: #ddd;
-  }
-  
-
-  #slider::-webkit-slider-thumb {
-    cursor: pointer;
-    color: #8c72ff;
-  }
-  
- 
