@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Egresados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+    <header id="header" class="shadow-sm fixed-top">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <div class="logo">
+                <img src="imgs/logo-devf.png" width="70px">
+            </div>
+            <div class="actions">
+                <a class="btn comienza d-none d-md-inline-block"><i class="bi-cart-check-fill" href="#"></i> Comienza ahora</a>
+                <a class="btn preguntar d-none d-md-inline-block"><i class="bi-chat-right-dots" href="#"></i> Pregúntale a un egresado</a>
+                <a class="btn preguntar mobi d-inline-block d-md-none"><i class="bi-chat-right-dots" href="#"></i> Pregúntale a un egresado</a>
+            </div>
+        </div>
+    </header>
+
+<!-- SHOWCASE -->
+    <section id="showcase" class="pt-5">
+        <div class="container py-5">
+            <div class="row d-flex align-items-center pt-4">
+                <div class="col-12 col-md-6 text-center">
+                    <h1 class="hackeranda">Aprende a programar</h1>
+                    <h2>Podrías ganar</h2>
+                    <div class="sueldo">$<span id="rangeValue">16,000</span> MXN</div>
+                    <p>Sueldo promedio de un <b>desarrollador Full Stack</b> en México</p>
+                    
+                    <div>
+                        
+                        <div class="main">
+                            <input type="range" class="range" min="0" max="32000" value="16000" step="500" id="slider" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">                    
+                        </div>
+
+                        <script  type="text/javascript">
+                            function rangeSlide(value) {
+                                document.getElementById('rangeValue').innerHTML = parseFloat(value)
+      .toLocaleString('en-US', { maximumFractionDigits: 2 });
+                            }
+
+                        </script>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="imgs/experiencia-devf-mobi.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<!-- APRENDE -->
+
+    <section id="aprende">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="pb-3">Aprender es más accesible cuando es práctico, en vivo y guiado</h2>
+                    <img src="imgs/experiencia-devf-desktop.jpg" class="img-fluid d-none d-md-block">
+                    <img src="imgs/experiencia-devf-mobi.jpg" class="img-fluid d-block d-md-none">
+                    <div class="row pt-4">
+                        <div class="col-12 col-lg-4 high mt-4">
+                            <h5>Acompañamiento personalizado de un Sensei experto</h5>
+                            <p>Tu Sensei estará a tu lado para resolver dudas o reforzar temas específicos.</p>
+                        </div>
+                        <div class="col-12 col-lg-4 high mt-4">
+                            <h5>Grupos reducidos</h5>
+                            <p>Tomarás clases en vivo con compañeros de tu mismo nivel. Tenemos un Sensei por cada 25 alumnos.</p>
+                        </div>
+                        <div class="col-12 col-lg-4 high mt-4">
+                            <h5>Método basado en hackatones</h5>
+                            <p>Terminarás el Master con un portafolio de proyectos reales que habrás construido a lo largo de tu experiencia en DEV.F. Aprendes haciendo pruebas técnicas de empresas reales</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+
+
+
+    <!-- GARANTÍA -->    
+    <section id="garantia" class="py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="text-start text-lg-center">
+                        <img src="imgs/logo-devf.png" width="90px">
+                        <h2 class="pt-4 pb-4">Un sistema educativo con garantía de éxito</h2>
+                    </div>
+                    <table class="comparativa table table-borderless align-middle">
+                        <thead>
+                            <tr class="border-bottom">
+                                <th></th>
+                                <th class="text-center fw-normal">DEV.F</th>
+                                <th class="text-center fw-normal">Competencia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="ventaja pt-3">Bolsa de trabajo</th>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#00A506;stroke-width:5.333333333333333;overflow:visible" aria-label="Incluido en DEV.F" role="img" focusable="false"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg></td>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#00A506;stroke-width:5.333333333333333;overflow:visible" aria-label="Incluido en DEV.F" role="img" focusable="false"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td colspan="3" class="descripcion pb-4">
+                                    Te conectamos con las principales empresas tecnológicas de México y Latinoamerica, que están en constante búsqueda de talento tech.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="ventaja pt-3">Empleo garantizado en tecnología</th>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#00A506;stroke-width:5.333333333333333;overflow:visible" aria-label="Incluido en DEV.F" role="img" focusable="false"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg></td>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#E12C32;stroke-width:5.333333333333333;overflow:visible" aria-label="No incluido en la competencia" role="img" focusable="false"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td colspan="3" class="descripcion pb-4">
+                                    Si no encuentras trabajo en seis meses después de concluir tu Master, te regresamos tu inversión.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="ventaja pt-3">Aprender hackeando</th>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#00A506;stroke-width:5.333333333333333;overflow:visible" aria-label="Incluido en DEV.F" role="img" focusable="false"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg></td>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#E12C32;stroke-width:5.333333333333333;overflow:visible" aria-label="No incluido en la competencia" role="img" focusable="false"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td colspan="3" class="descripcion pb-4">
+                                    DEV.F te prepara para tu empleo en tecnología con pruebas reales. Así aprendes haciendo
+                                </td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <th class="ventaja-b py-3">Desarrollador Full Stack en 12 meses</th>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#00A506;stroke-width:5.333333333333333;overflow:visible" aria-label="Incluido en DEV.F" role="img" focusable="false"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg></td>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#E12C32;stroke-width:5.333333333333333;overflow:visible" aria-label="No incluido en la competencia" role="img" focusable="false"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <th class="ventaja-b py-3">Portafolio con proyectos reales</th>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#00A506;stroke-width:5.333333333333333;overflow:visible" aria-label="Incluido en DEV.F" role="img" focusable="false"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg></td>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#E12C32;stroke-width:5.333333333333333;overflow:visible" aria-label="No incluido en la competencia" role="img" focusable="false"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <th class="ventaja-b py-3">Precio accesible</th>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#00A506;stroke-width:5.333333333333333;overflow:visible" aria-label="Incluido en DEV.F" role="img" focusable="false"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg></td>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#E12C32;stroke-width:5.333333333333333;overflow:visible" aria-label="No incluido en la competencia" role="img" focusable="false"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <th class="ventaja-b py-3">Preparación para entrevistas laborales</th>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#00A506;stroke-width:5.333333333333333;overflow:visible" aria-label="Incluido en DEV.F" role="img" focusable="false"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg></td>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#E12C32;stroke-width:5.333333333333333;overflow:visible" aria-label="No incluido en la competencia" role="img" focusable="false"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <th class="ventaja-b py-3">Diploma en Blockchain</th>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#00A506;stroke-width:5.333333333333333;overflow:visible" aria-label="Incluido en DEV.F" role="img" focusable="false"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg></td>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#E12C32;stroke-width:5.333333333333333;overflow:visible" aria-label="No incluido en la competencia" role="img" focusable="false"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg></td>
+                            </tr>
+                            <tr>
+                                <th class="ventaja pt-3">Campus virtual</th>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#00A506;stroke-width:5.333333333333333;overflow:visible" aria-label="Incluido en DEV.F" role="img" focusable="false"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg></td>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#00A506;stroke-width:5.333333333333333;overflow:visible" aria-label="Incluido en DEV.F" role="img" focusable="false"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td colspan="3" class="descripcion pb-4">
+                                    Diseñamos un Campus virtual único en el mercado, que facilitará tu experiencia de aprendizaje.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="ventaja pt-3">Eventos de Networking</th>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#00A506;stroke-width:5.333333333333333;overflow:visible" aria-label="Incluido en DEV.F" role="img" focusable="false"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg></td>
+                                <td align="center"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display:block;fill:none;height:24px;width:24px;stroke:#E12C32;stroke-width:5.333333333333333;overflow:visible" aria-label="No incluido en la competencia" role="img" focusable="false"><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td colspan="3" class="descripcion pb-4">
+                                    Aprenderás junto a personas que formarán parte de tu ed de contactos. Muchos fundadores de startuos se han conocido tomando clases juntos.
+                                </td>
+                            </tr>
+                        </tbody>
+                        
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+ <!-- PREGUNTAS -->
+
+    <section id="preguntas" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5">
+                    <h2 class="pb-2">Respondemos<br />tus preguntas</h2>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div class="accordion" id="Acordeon">
+
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              ¿Qué incluye mi acceso al curso?
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                            <div class="accordion-body">
+                                <p>Incluye asesorías personales con tu sensei, tu propio portafolio que te ayudará a la hora de tener entrevistas de trabajo, acceso a la comunidad más grande y vibrante de LATAM y acceso inédito a pláticas y eventos de la comunidad donde aprenderás de los líderes de el ecosistema Tech en LATAM.</p>
+                            </div>
+                          </div>
+                        </div>
+    
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              ¿Cuánto cuesta?
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                            <div class="accordion-body">
+                                <p>Tenemos diferentes opciones adaptadas a las posibilidades de cada alumno. También contamos con planes de pago a meses sin intereses. Nuestros asesores te ayudarán a elegir el plan que más se adapte a tus necesidades.</p>
+                            </div>
+                          </div>
+                        </div>
+    
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              ¿Qué pasa si no puedo asistir a alguna de las clases?
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                            <div class="accordion-body">
+                                <p>No te preocupes, tenemos recursos grabados que podrás consultar después para que puedas estar al corriente.</p>                 
+                            </div>
+                          </div>
+                        </div>
+    
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                              <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                ¿Las clases son en persona?
+                              </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                              <div class="accordion-body">
+                                <p>Todos nuestros cursos son en vivo por medio de videoconferencia</p>
+                            </div>
+                            </div>
+                        </div>
+                           
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- DUDAS -->
+    <section id="dudas" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <div class="dudas-inner rounded-3">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-12 col-md-5">
+                                <img src="imgs/users-desktop.jpg" class="img-fluid d-none d-md-block rounded-start">
+                                <img src="imgs/users-mobi.jpg" class="img-fluid d-block d-md-none rounded-top">
+                            </div>
+                            <div class="col-12 col-md-7 align-middle p-4">
+                                <h3>¿Te queda alguna duda?</h3>
+                                <p>Recibe respuestas de un Egresado con <br/>experiencia cerca de ti</p>
+                                <a class="btn preguntar" href="#"><i class="bi-chat-right-dots"></i> Pregúntale a un egresado</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+ 
+    
+
+
+<!-- Comienza -->
+<section id="comienza" class="py-3 fixed-bottom shadow-lg d-block d-md-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-grid gap-2">
+                    <a class="btn comienza"><i class="bi-cart-check-fill" href="#"></i> Comienza ahora</a>
+                </div>
+            </div>         
+        </div>
+    </div>
+</section>
+  
+    
+    
+
+
+
+<!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center py-5">
+                <div class="col-12 col-md-8 text-center text-md-start">
+                    <img src="imgs/devf-white.webp" class="pb-3" width="57px">
+                    <p>DEV.F ofrece una solución innovadora a la inclusión educativa con programas EdTech que ayudan a las personas a convertirse en desarrolladores de software y a obtener habilidades tecnológicas para así conseguir oportunidades laborales de alta calidad de manera ágil y accesible.</p>
+                </div>
+        
+                <div class="col-12 col-md-4 text-center text-md-end">
+                    <img src="imgs/empresa-b.webp" width="70px">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
