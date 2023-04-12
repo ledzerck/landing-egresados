@@ -22,7 +22,7 @@
                 <img src="imgs/logo-devf.png" width="70px">
             </div>
             <div class="actions">
-                <a class="btn comienza d-none d-md-inline-block"><i class="bi-cart-check-fill" href="#"></i> Comienza ahora</a>
+                <a class="btn comienza d-none d-md-inline-block" data-bs-toggle="modal" data-bs-target="#RegistroModal"><i class="bi-journal-code"></i> Da el primer paso</a>
                 <a class="btn preguntar d-none d-md-inline-block" data-bs-toggle="modal" data-bs-target="#CalendarioModal"><i class="bi-chat-right-dots" href="#"></i> Pregúntale a un egresado</a>
                 <a class="btn preguntar mobi d-inline-block d-md-none" data-bs-toggle="modal" data-bs-target="#CalendarioModal"><i class="bi-chat-right-dots" href="#"></i> Pregúntale a un egresado</a>
             </div>
@@ -325,7 +325,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="d-grid gap-2">
-                    <a class="btn comienza"><i class="bi-cart-check-fill" href="#"></i> Comienza ahora</a>
+                    <a class="btn comienza"  data-bs-toggle="modal" data-bs-target="#RegistroModal"><i class="bi-journal-code"></i> Da el primer paso</a>
                 </div>
             </div>         
         </div>
@@ -333,8 +333,30 @@
 </section>
   
 
-<!-- MODAL -->
 
+<!-- MODAL REGISTRO -->
+
+<div class="modal fade" id="RegistroModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">Da el primer paso</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+<!-- Registro a Info Session -->  
+          Aquí iría tentativamente el registro a la Info Session
+        </div>
+
+      </div>
+    </div>
+</div>
+
+
+
+
+<!-- MODAL CALENDARIO -->
 
 <div class="modal fade" id="CalendarioModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
