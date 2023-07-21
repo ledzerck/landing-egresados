@@ -163,14 +163,27 @@ h1, h2, h3 ,h4 ,h5 ,h6, .sueldo {
     background-color: #FFFFFF;
 }
 
+/* PREMIOS */
+
+#premios {
+    background-color: #2b2b3f;
+}
+
+
+
+#premios .award img {
+    height: 25px;
+}
 
 /* FOOTER */
+
 
 #footer {
     font-size: 12px;
     background-color: #0c0c0c;
     color: #7a7a7a;
 }
+
 
 /* INPUT RANGE*/
 
@@ -216,3 +229,41 @@ h1, h2, h3 ,h4 ,h5 ,h6, .sueldo {
     box-shadow: -407px 0 0 400px #cbc0fa;
   }
   
+
+
+
+  /* THANK YOU */
+
+#gracias {
+    background-color: #F8F8F8;
+}
+
+#gracias .datos {
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+#gracias .red {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    margin-right: 15px;
+    
+}
+
+#gracias .btn.zoom {
+    border: 1px solid #0b5cff;
+    color: #0b5cff;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 12px;
+    margin-right: 10px;
+    width: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#gracias .zoom {
+    color: #0b5cff;
+}
+

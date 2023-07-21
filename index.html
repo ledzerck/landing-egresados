@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Egresados</title>
+    <title>Promociones DEV.F</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -22,17 +22,14 @@
                 <img src="imgs/logo-devf.png" width="70px">
             </div>
             <div class="actions">
-                <a class="btn comienza d-none d-md-inline-block" data-bs-toggle="modal" data-bs-target="#RegistroModal"><i class="bi-journal-code"></i> Da el primer paso</a>
-                <a class="btn preguntar d-none d-md-inline-block" data-bs-toggle="modal" data-bs-target="#CalendarioModal"><i class="bi-chat-right-dots" href="#"></i> Habla con un egresado</a>
-                <a class="btn preguntar mobi d-inline-block d-md-none" data-bs-toggle="modal" data-bs-target="#CalendarioModal"><i class="bi-chat-right-dots" href="#"></i> Habla con un egresado</a>
             </div>
         </div>
     </header>
 
 <!-- SHOWCASE -->
-    <section id="showcase" class="pt-5">
+    <section id="showcase" class="pt-5 py-5">
         <div class="container pt-5 pb-3">
-            <div class="row d-flex align-items-center pt-4">
+            <div class="row d-flex align-items-center pt-4 justify-content-between">
                 <div class="col-12 col-md-6 text-center">
                     <h1 class="hackeranda">Aprende a programar</h1>
                     <h2 class="pb-4">Podrías ganar</h2>
@@ -70,8 +67,17 @@
 
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <img src="imgs/aprende.png" class="img-fluid d-none d-md-block">
+                <div id="inicia" class="col-12 col-md-5 mt-5">
+                    <div class="shadow rounded-3 p-4">
+                        <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/embed/v2.js"></script>
+                            <script>
+                            hbspt.forms.create({
+                                region: "na1",
+                                portalId: "7483854",
+                                formId: "4d315317-5459-4690-8829-e5d325e618df"
+                            });
+                        </script>
+                    </div>
                 </div>
             </div>
         </div>
@@ -303,8 +309,8 @@
                             </div>
                             <div class="col-12 col-md-7 align-middle p-4">
                                 <h3>¿Te queda alguna duda?</h3>
-                                <p>Recibe respuestas de un Egresado con <br/>experiencia cerca de ti</p>
-                                <a class="btn preguntar" data-bs-toggle="modal" data-bs-target="#CalendarioModal"><i class="bi-chat-right-dots"></i> Habla con un egresado</a>
+                                <p class="py-3">Recibe respuestas asistiendo<br />a la sesión informativa gratuita en vivo</p>
+                                <a href="#inicia" class="btn comienza"><i class="bi-journal-code"></i> Ven a la sesión informativa</a>
                             </div>
                         </div>
                     </div>
@@ -325,7 +331,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="d-grid gap-2">
-                    <a class="btn comienza"  data-bs-toggle="modal" data-bs-target="#RegistroModal"><i class="bi-journal-code"></i> Da el primer paso</a>
+                    <a href="#inicia" class="btn comienza"><i class="bi-journal-code"></i> Ven a la sesión informativa</a>
                 </div>
             </div>         
         </div>
@@ -334,47 +340,31 @@
   
 
 
-<!-- MODAL REGISTRO -->
 
-<div class="modal fade" id="RegistroModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5">Da el primer paso</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
 
-        <div class="modal-body">
-<!-- Registro a Info Session -->  
-          Aquí iría el form de Hubspot
-        </div>
-
-      </div>
+<section id="premios" class="col-12 text-center pt-5 py-4"> 
+    <div class="container">
+        <h6 class="text-white mb-4">Reconocidos por empresas líderes</h6>
+            
+            <div class="row">
+                <div class="award col-6 col-md-3 mb-3">
+                    <a href="https://www.iadb.org/es/noticias/el-bid-anuncia-las-propuestas-seleccionadas-de-bootcamps-para-fans-de-la-tecnologia?fbclid=IwAR1vDwpDnSFhNZ0Fu_oXalLPLC5M2p4IzHbZ5v4Dp3iUY52UAxAXtqVVWNY" target="_blank"><img src="imgs/logo-bid-lab-blanco.png" class="img-fluid mb-2"></a>  
+                </div>
+                <div class="award col-6 col-md-3 mb-3">
+                    <img src="imgs/logo-google-launchpad-accelerator-blanco.png" class="img-fluid mb-2">
+                </div>
+                <div class="award col-6 col-md-3 mb-3">
+                    <a href="https://www.forbes.com.mx/30-promesas-2018-hackers-para-transformar-a-la-sociedad/"><img src="imgs/logo-forbes-blanco.png" class="img-fluid mb-2"></a>
+                </div>
+                <div class="award col-6 col-md-3 mb-3">
+                    <img src="imgs/logo-redbox.png" class="img-fluid mb-2">
+                </div>
+            </div>
     </div>
-</div>
+</section>
 
 
 
-
-<!-- MODAL CALENDARIO -->
-
-<div class="modal fade" id="CalendarioModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5">Agenda tu llamada</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-
-        <div class="modal-body">
-<!-- IFRAME DE GOOGLE CALENDAR -->  
-          Aquí iría el calendario de Google
-        </div>
-
-      </div>
-    </div>
-</div>
-    
 
 
 
@@ -382,6 +372,7 @@
     <footer id="footer">
         <div class="container">
             <div class="d-flex flex-wrap justify-content-between align-items-center py-5">
+                                
                 <div class="col-12 col-md-8 text-center text-md-start">
                     <img src="imgs/devf-white.webp" class="pb-3" width="57px">
                     <p>DEV.F ofrece una solución innovadora a la inclusión educativa con programas EdTech que ayudan a las personas a convertirse en desarrolladores de software y a obtener habilidades tecnológicas para así conseguir oportunidades laborales de alta calidad de manera ágil y accesible.</p>
@@ -389,7 +380,7 @@
         
                 <div class="col-12 col-md-4 text-center text-md-end">
                     <img src="imgs/empresa-b.webp" width="70px">
-                </div>
+                </div>     
             </div>
         </div>
     </footer>
