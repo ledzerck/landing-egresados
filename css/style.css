@@ -184,8 +184,14 @@ h1, h2, h3 ,h4 ,h5 ,h6, .sueldo {
     color: #7a7a7a;
 }
 
+#footer .reconocidos {
+    margin: 15px 0;
+    padding-top: 15px;
+    border-top: 1px solid #2d2d2d;
+}
+
 #footer .reconocidos img {
-    margin: 10px 5px;
+    margin: 10px 15px 10px 0px ;
 }
 
 
